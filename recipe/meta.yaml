@@ -1,5 +1,5 @@
 {% set name = "libhxl" %}
-{% set version = "4.27" %}
+{% set version = "4.27.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 07a61cbcf48ee16d4649bfd49b102d15c939281c47f516d6ffa352981d58a3b9
+  sha256: 564fbb5022a38e13731578cb77190326fbd933c74fa11c61d5c646882c60ed0a
 
 build:
   noarch: python
@@ -46,7 +46,9 @@ requirements:
     - python-io-wrapper
     - requests >=2.11
     - requests_cache
+    - structlog ==22.1.0
     - unidecode
+    - urllib3 <1.27,>=1.21.1
     - xlrd3 ==1.1.0
 
 test:
