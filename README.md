@@ -1,11 +1,11 @@
-About libhxl
-============
+About libhxl-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libhxl-feedstock/blob/main/LICENSE.txt)
 
 Home: http://hxlstandard.org
 
 Package license: Unlicense
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libhxl-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python support library for the Humanitarian Exchange Language (HXL)
 
