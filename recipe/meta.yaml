@@ -42,6 +42,7 @@ requirements:
     - python >=3.6
     - jsonpath-ng
     - ply
+    - pytest
     - python-dateutil
     - python-io-wrapper
     - requests >=2.11
