@@ -1,5 +1,5 @@
 {% set name = "libhxl" %}
-{% set version = "5.0.2" %}
+{% set version = "5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5e618b0ea47fafb562f6a1bf032e209e5ab79de2e33b4a69f6717a57117b2556
+  sha256: a6f2808456a07f83495c0ef4ca2e70c5fbf608ff6ffc4a8d1a39ff112231e19f
 
 build:
   noarch: python
