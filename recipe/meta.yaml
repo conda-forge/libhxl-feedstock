@@ -38,6 +38,8 @@ requirements:
   host:
     - python >=3.6
     - pip
+    - setuptools
+    - wheel
   run:
     - python >=3.6
     - jsonpath-ng
@@ -50,7 +52,6 @@ requirements:
     - structlog ==22.1.0
     - unidecode
     - urllib3 <1.27,>=1.21.1
-    - wheel
     - xlrd3 ==1.1.0
 
 test:
