@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - hxladd = hxl.scripts:hxladd
     - hxlappend = hxl.scripts:hxlappend
@@ -38,6 +38,7 @@ requirements:
   host:
     - python >=3.6
     - pip
+    - setuptools
   run:
     - python >=3.6
     - jsonpath-ng
@@ -50,6 +51,7 @@ requirements:
     - structlog ==22.1.0
     - unidecode
     - urllib3 <1.27,>=1.21.1
+    - wheel
     - xlrd3 ==1.1.0
 
 test:
