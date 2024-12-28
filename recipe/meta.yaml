@@ -6,13 +6,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 3a74d9f23561bfcefd20e5229c574bc68dfc114fdb6ba1ba684d9e9d7ea52483
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - hxladd = hxl.scripts:hxladd
     - hxlappend = hxl.scripts:hxlappend
@@ -36,11 +36,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - jsonpath-ng
     - ply
     - pytest
@@ -60,6 +60,7 @@ test:
     - hxl.formulas
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
     - hxladd -h
